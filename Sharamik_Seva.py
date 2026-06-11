@@ -126,7 +126,7 @@ class ShramikSevaApp(tk.Tk):
         def login():
             user, pw = username.get(), password.get()
             if user == "" and pw == "":
-                self.current_user = {"role": "client", "username": ""}
+                self.current_user = {"role": "client", "username": "1"}
                 self.is_employer = False
                 self.subscription_plan = None
                 self.sub_status_label.config(text="Subscription: None")
