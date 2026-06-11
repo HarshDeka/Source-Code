@@ -125,8 +125,8 @@ class ShramikSevaApp(tk.Tk):
         password.bind("<Return>", on_enter)
         def login():
             user, pw = username.get(), password.get()
-            if user == "1" and pw == "1":
-                self.current_user = {"role": "client", "username": "1"}
+            if user == "" and pw == "":
+                self.current_user = {"role": "client", "username": ""}
                 self.is_employer = False
                 self.subscription_plan = None
                 self.sub_status_label.config(text="Subscription: None")
